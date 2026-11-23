@@ -202,9 +202,9 @@ MySQLAudit_CL
 
 ## Lessons Learned / Recommendations
 
-1. **Enforce Zero Public Database Exposure:** Disallow direct public internet routing to port 3306 via NSGs and host firewalls[cite: 3].
-2. **Restrict Remote Management Access (RDP):** Block direct public internet access to RDP (port 3389) via NSG rules, requiring VPN with MFA for remote administration[cite: 5].
-3. **Hardened Base Image Standards:** Automatically remove or disable standard default accounts (`administrator`, `Guest`) across all newly provisioned systems[cite: 3].
-4. **Database Remote Access Restrictions:** Disable remote `root` logins entirely, requiring local socket connections or encrypted VPN tunnels for management[cite: 3].
-5. **Automated Brute-Force Blocking:** Deploy automated lockouts and IP blocklists to suppress high-frequency failed logon attempts across both database and OS authentication endpoints[cite: 3, 5].
+1. **Enforce Zero Public Database Exposure:** Disallow direct public internet routing to port 3306 via NSGs and host firewalls.
+2. **Restrict Remote Management Access (RDP):** Block direct public internet access to RDP (port 3389) via NSG rules, requiring VPN with MFA for remote administration.
+3. **Hardened Base Image Standards:** Automatically remove or disable standard default accounts (`administrator`, `Guest`) across all newly provisioned systems.
+4. **Database Remote Access Restrictions:** Disable remote `root` logins entirely, requiring local socket connections or encrypted VPN tunnels for management.
+5. **Automated Brute-Force Blocking:** Deploy automated lockouts and IP blocklists to suppress high-frequency failed logon attempts across both database and OS authentication endpoints.
 
